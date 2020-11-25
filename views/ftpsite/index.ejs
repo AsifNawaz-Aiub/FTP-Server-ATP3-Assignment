@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<title>FTP Server</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    * {box-sizing: border-box;}
+    
+    body { 
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header {
+      overflow: hidden;
+      background-color: #000000;
+      padding: 40px 40px;
+      border: 5px solid rgb(161, 161, 161);
+    }
+    
+    .header a {
+      float: left;
+      color: #ffffff;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+    }
+    
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+    
+    .header-right {
+      float: right;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .header-right {
+        float: none;
+      }
+    }
+    </style>
+<body>
+
+<div class="" style="margin-left: 0px;" >
+    <div class="header">
+        <a href="#default" class="logo">Fast Net FTP Server</a>
+        <div class="header-right">
+          <a class="active" href="#home">Home</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+  
+
+  <div class="w3-bar w3-black"; style="margin-left: 0px;" >
+    <button class="w3-bar-item w3-button tablink w3-black" style="padding: 20px; padding-left: 34px; padding-right: 35px; ">Contents</button>
+    <button class="w3-bar-item w3-button tablink w3-red" style="padding: 20px; padding-left: 90px; padding-right: 90px; " onclick="openTab(event,'Movies')">Movies</button>
+    <button class="w3-bar-item w3-button tablink" style="padding: 20px; padding-left: 90px; padding-right: 90px; " onclick="openTab(event,'TVSeries')">TV Series</button>
+    <button class="w3-bar-item w3-button tablink" style="padding: 20px; padding-left: 90px; padding-right: 90px; " onclick="openTab(event,'Softwares')">Softwares</button>
+    <button class="w3-bar-item w3-button tablink" style="padding: 20px; padding-left: 90px; padding-right: 90px; " onclick="openTab(event,'Games')">Games</button>
+  </div>
+
+
+ 
+  
+
+
+
+
+  
+
+  <div id="Movies" class="w3-container w3-border tabsM">
+    
+    <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px; margin-left: -18px ">
+        <h5 class="w3-bar-item">Menu</h5>
+      
+        <button class="w3-bar-item w3-button tablink2" onclick="openLink(event, 'Left1')">Action</button>
+        <button class="w3-bar-item w3-button tablink2" onclick="openLink(event, 'Left2')">Thriller</button>
+        <button class="w3-bar-item w3-button tablink2" onclick="openLink(event, 'Left3')">Comedy</button>
+       
+      </div>
+      
+      <div style="margin-left:130px">
+        <div class="w3-padding">Use any of the w3-animate-classes to fade, zoom or slide in tab content.</div>
+      
+      
+      
+        <div id="Left1" class="w3-container tabs w3-animate-left" style="display:none">
+            <table>
+                <tr> <th>tabsssssss</th>  <th>tabsssssss</th></tr>
+ 
+                <tr> <td>tabsss</td><td>tabsss</td></tr>
+             </table>
+        </div>
+        <div id="Left2" class="w3-container tabs w3-animate-left" style="display:none">
+            <table>
+                <tr> <th>tabsssssss</th>  <th>tabsssssss</th></tr>
+ 
+                <tr> <td>tabsss</td><td>tabsss</td></tr>
+             </table>
+        </div>
+        <div id="Left3" class="w3-container tabs w3-animate-left" style="display:none">
+            <table>
+                <tr> <th>tabsssssss</th>  <th>tabsssssss</th></tr>
+ 
+                <tr> <td>tabsss</td><td>tabsss</td></tr>
+             </table>
+        </div>
+
+
+      
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="TVSeries" class="w3-container w3-border tabsM" style="display:none">
+    
+    <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px; margin-left: -18px ">
+        <h5 class="w3-bar-item">Menu</h5>
+      
+        <button class="w3-bar-item w3-button tablink2" onclick="openLink(event, 'Left4')">Action</button>
+        <button class="w3-bar-item w3-button tablink2" onclick="openLink(event, 'Left5')">Thriller</button>
+        <button class="w3-bar-item w3-button tablink2" onclick="openLink(event, 'Left6')">Comedy</button>
+       
+      </div>
+      
+      <div style="margin-left:130px">
+        <h2>TVSeries</h2>
+        <div class="w3-padding">Use any of the w3-animate-classes to fade, zoom or slide in tab content.</div>
+      
+      
+      
+        <div id="Left4" class="w3-container tabs w3-animate-left" style="display:none">
+            <table>
+                <tr> <th>tabsssssss</th>  <th>tabsssssss</th></tr>
+ 
+                <tr> <td>tabsss</td><td>tabsss</td></tr>
+             </table>
+        </div>
+        <div id="Left5" class="w3-container tabs w3-animate-left" style="display:none">
+            <table>
+                <tr> <th>tabsssssss</th>  <th>tabsssssss</th></tr>
+ 
+                <tr> <td>tabsss</td><td>tabsss</td></tr>
+             </table>
+        </div>
+        <div id="Left6" class="w3-container tabs w3-animate-left" style="display:none">
+            <table>
+                <tr> <th>tabsssssss</th>  <th>tabsssssss</th></tr>
+ 
+                <tr> <td>tabsss</td><td>tabsss</td></tr>
+             </table>
+        </div>
+
+
+      
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="Softwares" class="w3-container w3-border tabsM" style="display:none">
+    <h2>Softwares</h2>
+    <p>Softwares is the capital of Japan.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <div id="Games" class="w3-container w3-border tabsM" style="display:none">
+    <h2>Games</h2>
+    <p>Games is the capital of Japan.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<script>
+function openTab(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabsM");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+
+function openLink(evt, animName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabs");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks2 = document.getElementsByClassName("tablink2");
+  for (i = 0; i < x.length; i++) {
+    tablinks2[i].className = tablinks2[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(animName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+
+</script>
+
+</body>
+</html>
