@@ -145,15 +145,15 @@
     
             </tr>
     
-            <% for(var i=0; i< comedyrMovies.length; i++ ){ %>
+            <% for(var i=0; i< comedyMovies.length; i++ ){ %>
               
             <tr id="rows">
-              <td><%= comedyrMovies[i].genre %></td>
-              <td><%= comedyrMovies[i].name %></td>
-              <td><%= comedyrMovies[i].rating %></td>
-              <td><%= comedyrMovies[i].publishYear %></td>
+              <td><%= comedyMovies[i].genre %></td>
+              <td><%= comedyMovies[i].name %></td>
+              <td><%= comedyMovies[i].rating %></td>
+              <td><%= comedyMovies[i].publishYear %></td>
               <td>
-              <a href="/ftpsite/movieDownload/<%=comedyrMovies[i].id%>"class="w3-bar-item w3-button tablink" >Download</a>
+              <a href="/ftpsite/movieDownload/<%=comedyMovies[i].id%>"class="w3-bar-item w3-button tablink" >Download</a>
               </td>
             </tr>
             <% } %>
@@ -196,30 +196,88 @@
       
       <div style="margin-left:130px">
         <h2>TVSeries</h2>
-        <div class="w3-padding">Use any of the w3-animate-classes to fade, zoom or slide in tab content.</div>
+        
       
       
       
         <div id="Left4" class="w3-container tabs w3-animate-left" style="display:none">
-            <table>
-                <tr> <th>tabsssssss</th>  <th>tabsssssss</th></tr>
- 
-                <tr> <td>tabsss</td><td>tabsss</td></tr>
+          <table>
+              <tr>
+                <th>Genre</th>
+                <th>Seris Name</th>
+                <th>Rating</th>
+                <th>Publish Year</th>
+                <th>Action</th>
+      
+              </tr>
+      
+              <% for(var i=0; i< actionTvSeries.length; i++ ){ %>
+                
+              <tr id="rows">
+                <td><%= actionTvSeries[i].genre %></td>
+                <td><%= actionTvSeries[i].name %></td>
+                <td><%= actionTvSeries[i].rating %></td>
+                <td><%= actionTvSeries[i].publishYear %></td>
+                <td>
+                <a href="/ftpsite/seriesDownload/<%=actionTvSeries[i].id%>"class="w3-bar-item w3-button tablink" >Download</a>
+                </td>
+              </tr>
+              <% } %>
+      
              </table>
         </div>
+
         <div id="Left5" class="w3-container tabs w3-animate-left" style="display:none">
             <table>
-                <tr> <th>tabsssssss</th>  <th>tabsssssss</th></tr>
- 
-                <tr> <td>tabsss</td><td>tabsss</td></tr>
+              <tr>
+                <th>Genre</th>
+                <th>Seris Name</th>
+                <th>Rating</th>
+                <th>Publish Year</th>
+                <th>Action</th>
+      
+              </tr>
+      
+              <% for(var i=0; i< thrillerTvSeries.length; i++ ){ %>
+                
+              <tr id="rows">
+                <td><%= thrillerTvSeries[i].genre %></td>
+                <td><%= thrillerTvSeries[i].name %></td>
+                <td><%= thrillerTvSeries[i].rating %></td>
+                <td><%= thrillerTvSeries[i].publishYear %></td>
+                <td>
+                <a href="/ftpsite/seriesDownload/<%=thrillerTvSeries[i].id%>"class="w3-bar-item w3-button tablink" >Download</a>
+                </td>
+              </tr>
+              <% } %>
+      
              </table>
         </div>
         <div id="Left6" class="w3-container tabs w3-animate-left" style="display:none">
-            <table>
-                <tr> <th>tabsssssss</th>  <th>tabsssssss</th></tr>
- 
-                <tr> <td>tabsss</td><td>tabsss</td></tr>
-             </table>
+          <table>
+            <tr>
+              <th>Genre</th>
+              <th>Seris Name</th>
+              <th>Rating</th>
+              <th>Publish Year</th>
+              <th>Action</th>
+    
+            </tr>
+    
+            <% for(var i=0; i< comedyTvSeries.length; i++ ){ %>
+              
+            <tr id="rows">
+              <td><%= comedyTvSeries[i].genre %></td>
+              <td><%= comedyTvSeries[i].name %></td>
+              <td><%= comedyTvSeries[i].rating %></td>
+              <td><%= comedyTvSeries[i].publishYear %></td>
+              <td>
+              <a href="/ftpsite/seriesDownload/<%=comedyTvSeries[i].id%>"class="w3-bar-item w3-button tablink" >Download</a>
+              </td>
+            </tr>
+            <% } %>
+    
+           </table>
         </div>
 
 
